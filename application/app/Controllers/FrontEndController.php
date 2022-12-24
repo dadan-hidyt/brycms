@@ -25,9 +25,6 @@ abstract class FrontEndController extends BaseController
         }
         $config = new TemplateConfig();
         $theme_file = $config->getFrontendPath().$theme.DIRECTORY_SEPARATOR.$view.'.php';
-        if(!file_exists($theme_file)){
-            die("Theme <b>{$theme}</b> Not Registery | Requested file: {$theme_file}");
-        }
-        return $this->template->render("{$view}", compact('data'),$config->getFrontendPath().$theme.DIRECTORY_SEPARATOR);
+        return $this->template->render("{$view}", $data ,$config->getFrontendPath().$theme.DIRECTORY_SEPARATOR);
     }
 }

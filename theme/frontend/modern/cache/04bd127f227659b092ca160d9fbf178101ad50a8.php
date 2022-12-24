@@ -1,0 +1,1 @@
+<?php /**PATH E:\htdocs\project\brycms\brycms\theme\frontend\modern/_section/footer.blade.php ENDPATH**/ ?>

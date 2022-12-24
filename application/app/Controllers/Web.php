@@ -8,7 +8,7 @@ class Web extends FrontEndController
 {
     public function index()
     {
-        $title = "Home - Website";
-        return $this->render('index',compact('title'));
+       $title = "Home - Website";
+       return $this->render('index',compact('title'));
     }
 }
